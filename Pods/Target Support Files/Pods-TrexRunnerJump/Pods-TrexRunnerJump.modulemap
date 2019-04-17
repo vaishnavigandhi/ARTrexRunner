@@ -1,0 +1,6 @@
+framework module Pods_TrexRunnerJump {
+  umbrella header "Pods-TrexRunnerJump-umbrella.h"
+
+  export *
+  module * { export * }
+}
