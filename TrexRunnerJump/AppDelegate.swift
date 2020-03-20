@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        
+        if let presentedViewController = window?.rootViewController?.presentedViewController{
+            if(presentedViewController.isKind(of: UIImagePickerController.self) && presentedViewController.isBeingDismissed){
+                     return UIInterfaceOrientationMask.portrait
+            }
+        }
+        return UIInterfaceOrientationMask.landscape
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

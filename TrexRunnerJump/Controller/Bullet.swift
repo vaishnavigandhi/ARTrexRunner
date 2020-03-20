@@ -13,7 +13,7 @@ class Bullet: SKSpriteNode {
     
     override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         //load bullet image
-        let texture = SKTexture(imageNamed: "bullet")
+        let texture = SKTexture(imageNamed: "bulleta")
         //set image size
         
         let size = CGSize(width: 70, height: 100)
@@ -25,7 +25,7 @@ class Bullet: SKSpriteNode {
         super.init(texture:texture,color:color,size:size)
         
         //add physics to orange
-        //        self.physicsBody = SKPhysicsBody(circleOfRadius: size.width/2)
+//                self.physicsBody = SKPhysicsBody(circleOfRadius: size.width/2)
     }
     
     required init?(coder aDecoder: NSCoder) {

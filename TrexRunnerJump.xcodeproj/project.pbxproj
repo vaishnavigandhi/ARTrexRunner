@@ -22,6 +22,16 @@
 		989CA71E2266A9CA003FC456 /* StartGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CA71C2266A9CA003FC456 /* StartGame.swift */; };
 		989CA7202266AEC7003FC456 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 989CA71F2266AEC7003FC456 /* GoogleService-Info.plist */; };
 		989CA72222676C6C003FC456 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CA72122676C6C003FC456 /* Bullet.swift */; };
+		F6462162226D0C37008DCBA3 /* collide.wav in Resources */ = {isa = PBXBuildFile; fileRef = F646215F226D0C36008DCBA3 /* collide.wav */; };
+		F6462163226D0C37008DCBA3 /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = F6462160226D0C37008DCBA3 /* score.wav */; };
+		F6462164226D0C37008DCBA3 /* bullet.wav in Resources */ = {isa = PBXBuildFile; fileRef = F6462161226D0C37008DCBA3 /* bullet.wav */; };
+		F6462166226E49BF008DCBA3 /* dino.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F6462165226E49BE008DCBA3 /* dino.atlas */; };
+		F6462169226E62A0008DCBA3 /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F6462168226E62A0008DCBA3 /* bird.atlas */; };
+		F64BED09226B994500780123 /* tutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64BED08226B994500780123 /* tutorialController.swift */; };
+		F64BED0B226BC13300780123 /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64BED0A226BC13300780123 /* PlayerState.swift */; };
+		F64BED0D226BC24700780123 /* testTutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = F64BED0C226BC24700780123 /* testTutorial.sks */; };
+		F64BED0F226BD01200780123 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64BED0E226BD01200780123 /* Next.swift */; };
+		F64BED11226BD06900780123 /* next.sks in Resources */ = {isa = PBXBuildFile; fileRef = F64BED10226BD06900780123 /* next.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +53,16 @@
 		989CA71C2266A9CA003FC456 /* StartGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGame.swift; sourceTree = "<group>"; };
 		989CA71F2266AEC7003FC456 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		989CA72122676C6C003FC456 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		F646215F226D0C36008DCBA3 /* collide.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collide.wav; sourceTree = "<group>"; };
+		F6462160226D0C37008DCBA3 /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		F6462161226D0C37008DCBA3 /* bullet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bullet.wav; sourceTree = "<group>"; };
+		F6462165226E49BE008DCBA3 /* dino.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dino.atlas; sourceTree = "<group>"; };
+		F6462168226E62A0008DCBA3 /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
+		F64BED08226B994500780123 /* tutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialController.swift; sourceTree = "<group>"; };
+		F64BED0A226BC13300780123 /* PlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
+		F64BED0C226BC24700780123 /* testTutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testTutorial.sks; sourceTree = "<group>"; };
+		F64BED0E226BD01200780123 /* Next.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next.swift; sourceTree = "<group>"; };
+		F64BED10226BD06900780123 /* next.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = next.sks; sourceTree = "<group>"; };
 		F69EEB80DFEE34142F9EDFA7 /* Pods_TrexRunnerJump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrexRunnerJump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,11 +116,16 @@
 		982F56EB2264C96000CAD314 /* TrexRunnerJump */ = {
 			isa = PBXGroup;
 			children = (
+				F6462168226E62A0008DCBA3 /* bird.atlas */,
+				F6462165226E49BE008DCBA3 /* dino.atlas */,
+				F646215F226D0C36008DCBA3 /* collide.wav */,
+				F6462161226D0C37008DCBA3 /* bullet.wav */,
+				F6462160226D0C37008DCBA3 /* score.wav */,
 				982F56EC2264C96000CAD314 /* AppDelegate.swift */,
 				989CA7152266A8B6003FC456 /* scene */,
 				989CA7162266A8E1003FC456 /* Controller */,
-				982F56F62264C96000CAD314 /* Main.storyboard */,
 				982F56F92264C96300CAD314 /* Assets.xcassets */,
+				982F56F62264C96000CAD314 /* Main.storyboard */,
 				989CA71F2266AEC7003FC456 /* GoogleService-Info.plist */,
 				982F56FB2264C96300CAD314 /* LaunchScreen.storyboard */,
 				982F56FE2264C96300CAD314 /* Info.plist */,
@@ -111,10 +136,12 @@
 		989CA7152266A8B6003FC456 /* scene */ = {
 			isa = PBXGroup;
 			children = (
+				F64BED0C226BC24700780123 /* testTutorial.sks */,
 				982F56EE2264C96000CAD314 /* GameScene.sks */,
 				989CA7112266A892003FC456 /* HighScore.sks */,
 				989CA7122266A892003FC456 /* StartGame.sks */,
 				982F56F02264C96000CAD314 /* Actions.sks */,
+				F64BED10226BD06900780123 /* next.sks */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -127,6 +154,9 @@
 				989CA71C2266A9CA003FC456 /* StartGame.swift */,
 				989CA71B2266A9CA003FC456 /* HighScore.swift */,
 				989CA72122676C6C003FC456 /* Bullet.swift */,
+				F64BED08226B994500780123 /* tutorialController.swift */,
+				F64BED0A226BC13300780123 /* PlayerState.swift */,
+				F64BED0E226BD01200780123 /* Next.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,13 +222,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				982F56F82264C96000CAD314 /* Main.storyboard in Resources */,
+				F6462163226D0C37008DCBA3 /* score.wav in Resources */,
 				989CA7202266AEC7003FC456 /* GoogleService-Info.plist in Resources */,
+				F6462169226E62A0008DCBA3 /* bird.atlas in Resources */,
+				F64BED11226BD06900780123 /* next.sks in Resources */,
 				982F56EF2264C96000CAD314 /* GameScene.sks in Resources */,
+				F6462164226D0C37008DCBA3 /* bullet.wav in Resources */,
 				989CA7132266A892003FC456 /* HighScore.sks in Resources */,
 				982F56FA2264C96300CAD314 /* Assets.xcassets in Resources */,
 				982F56FD2264C96300CAD314 /* LaunchScreen.storyboard in Resources */,
+				F6462166226E49BF008DCBA3 /* dino.atlas in Resources */,
+				F64BED0D226BC24700780123 /* testTutorial.sks in Resources */,
 				982F56F12264C96000CAD314 /* Actions.sks in Resources */,
 				989CA7142266A892003FC456 /* StartGame.sks in Resources */,
+				F6462162226D0C37008DCBA3 /* collide.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +299,13 @@
 			files = (
 				982F56F32264C96000CAD314 /* GameScene.swift in Sources */,
 				982F56F52264C96000CAD314 /* GameViewController.swift in Sources */,
+				F64BED0B226BC13300780123 /* PlayerState.swift in Sources */,
 				989CA71E2266A9CA003FC456 /* StartGame.swift in Sources */,
 				989CA71D2266A9CA003FC456 /* HighScore.swift in Sources */,
+				F64BED0F226BD01200780123 /* Next.swift in Sources */,
 				982F56ED2264C96000CAD314 /* AppDelegate.swift in Sources */,
 				989CA72222676C6C003FC456 /* Bullet.swift in Sources */,
+				F64BED09226B994500780123 /* tutorialController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,13 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4HQ3J3N37Q;
+				DEVELOPMENT_TEAM = JRCWNX2NH4;
 				INFOPLIST_FILE = TrexRunnerJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.TrexRunnerJump;
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.TrexRunnerJump76;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,13 +472,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4HQ3J3N37Q;
+				DEVELOPMENT_TEAM = JRCWNX2NH4;
 				INFOPLIST_FILE = TrexRunnerJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.TrexRunnerJump;
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.TrexRunnerJump76;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

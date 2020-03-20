@@ -17,6 +17,7 @@ class GameViewController: UIViewController,ARSessionDelegate {
    
     var db:DatabaseReference!
     var session:ARSession!
+    var tutorialController : tutorialController!
     
      var deviceId = UIDevice.current.identifierForVendor!.uuidString
     
@@ -91,19 +92,39 @@ class GameViewController: UIViewController,ARSessionDelegate {
             return
         }
         
-        if browinnerUp > 0.5 {
-            print("Move Dino Up")
+//        if browinnerUp > 0.5 {
+////            tutorialController.updatePlayer(state: .up)
+//            tutorialController.updatePlayer(state: .up)
+//        }else if browinnerUp < 0.025 {
+//            tutorialController.updatePlayer(state: .down)
+//        }else {
+//            tutorialController.updatePlayer(state: .neutral)
+//        }
+//        
+    
+        
+        guard let toungue = blendShapes[.tongueOut] else {
+            return
         }
+        
+       
+        
+//        print("BrowInnerUp\(browinnerUp)")
+        
         
         self.db = Database.database().reference()
         self.db.child("startGame").child(deviceId).observeSingleEvent(of: .value, with:{
             (snapshot) in
             let x = snapshot.value as! NSDictionary
-            print("x\(x["brows"])")
+//            print("x\(x["brows"])")
+            self.db = Database.database().reference()
+            self.db.child("startGame").child(self.deviceId).child("brows").setValue(browinnerUp)
             
+            self.db.child("startGame").child(self.deviceId).child("toungue").setValue(toungue)
         })
         
      }
+    
     
     func startDetect() {
             print("STATRGAME")
